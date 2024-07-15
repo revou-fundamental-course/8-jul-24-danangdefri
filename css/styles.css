@@ -25,7 +25,7 @@ main {
   background-color: #7ec4eb;
   border-radius: 10px;
   padding: 10px;
-  margin: 15px 0 0 0;
+  margin-top: 15px;
 }
 
 .gander {
@@ -51,7 +51,7 @@ input[type="number"]:focus {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  margin: 0 0 15px 0;
+  margin-bottom: 15px;
 }
 
 button {
@@ -67,6 +67,50 @@ button {
   background-color: #afe3fa;
 }
 
+.button-hitung {
+  border: none;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 5px 5px;
+  background-color: #afe3fa;
+}
+
 .button-riset {
   background-color: white;
+}
+
+.information {
+  background-color: #7ec4eb;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  display: none;
+}
+
+h3 {
+  margin-bottom: 8px;
+}
+
+ol {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul {
+  margin-top: 8px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.toggle {
+  display: none;
 }

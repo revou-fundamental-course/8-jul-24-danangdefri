@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- <script type="text/javascript">
+      function showDiv(toggle) {
+        document.getElementById(toggle).style.display = "block";
+      } -->
+
+    </script>
   </head>
   <body>
     <header class="main-header">
@@ -14,7 +21,7 @@
       <!-- Lift Content -->
       <section class="main-content">
         <article>
-          Berat badan ideal adalah impian semua orang. Tak hanya memiliki tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?<br />Yuk hitung sekarang di kalkulator BMI.
+          <p>Berat badan ideal adalah impian semua orang. Tak hanya memiliki tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?<br />Yuk hitung sekarang di kalkulator BMI.</p>
         </article>
 
         <!-- input-form -->
@@ -40,45 +47,64 @@
               <input type="number" id="input-tinggi-badan" />
             </div>
             <div>
-              <button>Hitung BMI</button>
+              <input type="button" class="button-hitung" onclick="showDiv('toggle')" value="Hitung" />
               <button class="button-riset">Riset</button>
             </div>
           </form>
         </section>
-
-        <!-- Keunggulan-kalkulator-bmi -->
-        <article>
-          <h3>Keunggulan kalkulator BMI</h3>
-          <ol>
-            <li>Menghutung berat badan.</li>
-            <li>Menentukan kategori berat badan ideal atau tidak.</li>
-            <li>Mempersiapan program penurunan berat badan.</li>
-          </ol>
-        </article>
       </section>
 
       <!-- Right-Conten -->
       <section class="main-content">
-        <article>
+        <!-- result -->
+        <section class="toggle" id="toggle">
           <header>
             <h3>Hasil</h3>
           </header>
 
-          <!-- Hasil-perhutungan -->
           <section class="result">
             <p>blablablabla</p>
             <h2>123</h2>
             <p>blablablabla</p>
             <button>Donwload Hasil BMI</button>
           </section>
+        </section>
+
+        <!-- information -->
+        <section class="information">
+          <h2>123</h2>
+          <p>blablablabla</p>
+          <p>blablablabla</p>
+          <p>blablablabla</p>
+        </section>
+
+        <!-- Keunggulan-kalkulator-bmi -->
+        <article>
+          <h3 style="margin-top: 0px; margin-bottom: 8px;">Keunggulan kalkulator BMI</h3>
+          <ol>
+            <li>Menghutung berat badan.</li>
+            <li>Menentukan kategori berat badan ideal atau tidak.</li>
+            <li>Mempersiapan program penurunan berat badan.</li>
+          </ol>
         </article>
 
         <article>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nulla delectus quae exercitationem perspiciatis quis nisi atque ducimus. Ad ea delectus laborum quae et numquam accusamus rem deserunt. Eius, placeat.
+          <p>Saatnya mengatur gaya hidup dengan pola makan sehat & olahraga teratur untuk menjaga berat badan ideal yang membuat penampilanmu memikat, serta terhindar dari berbagai risiko penyakit.</p>
         </article>
 
+        <!-- Manfaat memakaip kalkulator BMI -->
         <article>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nulla delectus quae exercitationem perspiciatis quis nisi atque ducimus. Ad ea delectus laborum quae et numquam accusamus rem deserunt. Eius, placeat.
+          <h3>Manfaat memakai kalkulator BMI</h3>
+          <ul>
+            <li>Ketahui Indeks Massa Tubuh (IMT)</li>
+            <p>Body Mass Index atau Indeks Massa Tubuh dihitung berdasarkan berat dan tinggi badan. Dari nilai BMI, kamu bisa tahu apakah kondisi badanmu sudah termasuk ideal atau belum.</p>
+            <li>Lebih Waspada Sama Berat Badan</li>
+            <p>Dari nilai BMI yang dipantau secara teratur, kamu bisa lebih waspada untuk menjaga berat badan supaya ngga terlalu tinggi atau terlalu rendah.</p>
+            <li>Jaga Kesehatan Badan</li>
+            <p>Saat kamu tahu nilai BMI-mu, kamu bisa lebih menjaga kesehatan badanmu, lho. Itu karena berat badan adalah salah satu indikator dari kondisi kesehatanmu.</p>
+            <li>Jauhi Obesitas</li>
+            <p>Sayangi badanmu dengan cara menjaga indeks massa tubuh (IMT) supaya ngga melewati batas normal.</p>
+          </ul>
         </article>
       </section>
     </main>
