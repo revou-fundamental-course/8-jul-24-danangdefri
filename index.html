@@ -4,14 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator BMI</title>
+
     <link rel="stylesheet" href="css/styles.css" />
-
-    <!-- <script type="text/javascript">
-      function showDiv(toggle) {
-        document.getElementById(toggle).style.display = "block";
-      } -->
-
-    </script>
   </head>
   <body>
     <header class="main-header">
@@ -27,31 +21,48 @@
         <!-- input-form -->
         <section>
           <form action="" class="form-input">
+            <!-- input jenis kelamin  -->
             <div class="gander">
               <div class="title-gender">Jenis Kelamin</div>
-              <input type="radio" id="section-man" name="gander" />
+              <input type="radio" id="section-man" value="Laki-laki" name="gender" checked />
               <label for="section-man">Laki-laki</label>
-              <input type="radio" id="section-woman" name="gander" />
+              <input type="radio" id="section-woman" value="Perempuan" name="gender" />
               <label for="section-woman">Perempuan</label>
             </div>
+            <!-- input berat badan  -->
             <div>
-              <label for="input-barat-badan">Berat Badan (kg)</label>
-              <input type="number" id="input-barat-badan" />
+              <label for="input-berat-badan">Berat Badan (kg)</label>
+              <input type="number" id="input-berat-badan" />
             </div>
+            <!-- input umur -->
             <div>
               <label for="input-usia">Usia (tahun)</label>
               <input type="number" id="input-usia" />
             </div>
+            <!-- input tinggi badan  -->
             <div>
               <label for="input-tinggi-badan">Tinggi Badan (cm)</label>
               <input type="number" id="input-tinggi-badan" />
             </div>
             <div>
-              <input type="button" class="button-hitung" onclick="showDiv('toggle')" value="Hitung" />
-              <button class="button-riset">Riset</button>
+              <button type="button" onclick="hitung()" id="button-hitung" class="button-hitung">Hitung</button>
+              <button class="button-riset" id="button-riset" onclick="reset()">Riset</button>
             </div>
           </form>
         </section>
+
+        <!-- Keunggulan-kalkulator-bmi -->
+        <article>
+          <h3 style="margin-top: 0px; margin-bottom: 8px">Keunggulan kalkulator BMI</h3>
+          <ol>
+            <li>Menghitung berat badan.</li>
+            <li>Menentukan kategori berat badan ideal atau tidak.</li>
+            <li>Mempersiapan program penurunan berat badan.</li>
+          </ol>
+        </article>
+        <article>
+          <p>Saatnya mengatur gaya hidup dengan pola makan sehat & olahraga teratur untuk menjaga berat badan ideal yang membuat penampilanmu memikat, serta terhindar dari berbagai risiko penyakit.</p>
+        </article>
       </section>
 
       <!-- Right-Conten -->
@@ -62,35 +73,31 @@
             <h3>Hasil</h3>
           </header>
 
-          <section class="result">
-            <p>blablablabla</p>
-            <h2>123</h2>
-            <p>blablablabla</p>
+          <!-- form-result -->
+          <section class="form-result">
+            <p id="output-gender"></p>
+            <h2 id="bmi"></h2>
+            <p id="kategori"></p>
             <button>Donwload Hasil BMI</button>
           </section>
         </section>
 
         <!-- information -->
-        <section class="information">
-          <h2>123</h2>
-          <p>blablablabla</p>
-          <p>blablablabla</p>
-          <p>blablablabla</p>
+        <section id="information-kurus">
+          <h2>Berat badan rendah dapat menyebabkan berbagai masalah penyakit</h2>
+          <p>Infertilita</p>
+          <p>Anemia</p>
+          <p>Osteoporosis</p>
+          <p>Sistem Imun Lemah</p>
         </section>
 
-        <!-- Keunggulan-kalkulator-bmi -->
-        <article>
-          <h3 style="margin-top: 0px; margin-bottom: 8px;">Keunggulan kalkulator BMI</h3>
-          <ol>
-            <li>Menghutung berat badan.</li>
-            <li>Menentukan kategori berat badan ideal atau tidak.</li>
-            <li>Mempersiapan program penurunan berat badan.</li>
-          </ol>
-        </article>
-
-        <article>
-          <p>Saatnya mengatur gaya hidup dengan pola makan sehat & olahraga teratur untuk menjaga berat badan ideal yang membuat penampilanmu memikat, serta terhindar dari berbagai risiko penyakit.</p>
-        </article>
+        <section id="information-gemuk">
+          <h2>Berbagai penyakit yang disebabkan oleh kegemukan</h2>
+          <p>Diabetes</p>
+          <p>Hipertensi</p>
+          <p>Sakit Jantung</p>
+          <p>Osteoporosis</p>
+        </section>
 
         <!-- Manfaat memakaip kalkulator BMI -->
         <article>
@@ -108,5 +115,6 @@
         </article>
       </section>
     </main>
+    <script src="js/scripts.js" ;></script>
   </body>
 </html>
